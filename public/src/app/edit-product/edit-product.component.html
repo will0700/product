@@ -1,0 +1,18 @@
+<form (submit)="handleSubmit()" *ngIf="author !== null">
+        <p *ngFor="let error of errors">{{ error }}</p>
+        <div>
+            <label for="">Title:</label>
+            <input type="text" name="title" [(ngModel)]="product.title">
+        </div>
+        <div>
+            <label for="">Price:</label>
+            <input type="number" name="price" [(ngModel)]="product.price">
+        </div>
+        <div>
+            <label for="">Image URL:</label>
+            <input type="text" name="image_url" [(ngModel)]="product.image_url">
+        </div>
+        <button>Submit</button>
+        <button type="button" (click)="handleDelete(author._id)">Cancel</button>
+
+    </form>

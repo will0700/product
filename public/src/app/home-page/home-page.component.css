@@ -1,0 +1,10 @@
+.wrapper {
+    border: solid black 2px;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.wrapper p {
+    font-size: 20px;
+}

@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <form (submit)="handleSubmit()">
+        <p *ngFor="let error of errors">{{ error }}</p>
+        <div>
+            <label for="">Title:</label>
+            <input type="text" name="title" [(ngModel)]="newProduct.title">
+        </div>
+        <div>
+            <label for="">Price:</label>
+            <input type="number" name="price" [(ngModel)]="newProduct.price">
+        </div>
+        <div>
+            <label for="">Image URL:</label>
+            <input type="text" name="image_url" [(ngModel)]="newProduct.image_url">
+        </div>
+        <button type="button" (click)="handleCancel()">Cancel</button>
+        <button>Submit</button>
+    </form>
+</div>
